@@ -1664,6 +1664,27 @@ Grid 5.00 mm&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="dc-dc-converter">
+<description>&lt;b&gt;DC-DC Converters&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="4SIL">
+<description>&lt;b&gt;4 Pin DIL Package&lt;/b&gt;&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: va-serie.pdf.pdf</description>
+<wire x1="5.75" y1="-1.15" x2="-5.75" y2="-1.15" width="0.2032" layer="21"/>
+<wire x1="-5.75" y1="-1.15" x2="-5.75" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="-5.75" y1="3.65" x2="5.75" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="5.75" y1="3.65" x2="5.75" y2="-1.15" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.8"/>
+<pad name="2" x="-1.27" y="0" drill="0.8"/>
+<pad name="3" x="1.27" y="0" drill="0.8"/>
+<pad name="4" x="3.81" y="0" drill="0.8"/>
+<text x="-5.08" y="5.08" size="1.778" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1940,6 +1961,12 @@ design rules under a new name.</description>
 <attribute name="PRICE_100" value="0.005" x="37.465" y="31.4325" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2310707" x="37.465" y="31.4325" size="1.778" layer="27" display="off"/>
 </element>
+<element name="DC1" library="dc-dc-converter" package="4SIL" value="VA-0505S" x="-6.35" y="5.08">
+<attribute name="OC_NEWARK" value="unknown" x="-6.35" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-6.35" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-6.35" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-6.35" y="5.08" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1981,6 +2008,19 @@ design rules under a new name.</description>
 <vertex x="57.15" y="2.54"/>
 <vertex x="57.15" y="0"/>
 </polygon>
+<contactref element="DC1" pad="1"/>
+<wire x1="21.59" y1="35.88" x2="17.78" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="25.0825" y1="33.6525" x2="21.59" y2="35.88" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="29.246" x2="25.0825" y2="33.6525" width="0" layer="19" extent="1-1"/>
+<wire x1="29.3878" y1="29.21" x2="24.13" y2="29.246" width="0" layer="19" extent="1-1"/>
+<wire x1="29.3878" y1="26.67" x2="29.3878" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="34.1122" y1="27.94" x2="29.3878" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="38.415" y1="31.4325" x2="34.1122" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="31.79" x2="21.59" y2="35.88" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="16.55" x2="4.445" y2="31.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="5.08" x2="4.445" y2="16.55" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="2.54" x2="29.3878" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="2.54" x2="31.75" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC1">
 <contactref element="IC2" pad="1"/>
@@ -2104,6 +2144,17 @@ design rules under a new name.</description>
 <contactref element="JP5" pad="3"/>
 <wire x1="30.48" y1="36.83" x2="30.479996875" y2="36.83" width="0.254" layer="1"/>
 <wire x1="30.479996875" y1="36.83" x2="28.61175" y2="38.698246875" width="0.254" layer="1"/>
+</signal>
+<signal name="+5V">
+<contactref element="JP3" pad="4"/>
+<contactref element="DC1" pad="2"/>
+<wire x1="-7.62" y1="5.08" x2="29.21" y2="2.54" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GNDI">
+<contactref element="DC1" pad="3"/>
+</signal>
+<signal name="+5V/2">
+<contactref element="DC1" pad="4"/>
 </signal>
 </signals>
 </board>
