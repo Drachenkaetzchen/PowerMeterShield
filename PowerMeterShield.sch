@@ -8022,7 +8022,9 @@ Source: va-serie.pdf</description>
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
 </part>
-<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505"/>
+<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505">
+<attribute name="OC_FARNELL" value="2079696"/>
+</part>
 <part name="U1" library="Adum1250" deviceset="ADUM1250ARZ" device=""/>
 </parts>
 <sheets>
