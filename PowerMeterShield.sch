@@ -8022,10 +8022,10 @@ Source: va-serie.pdf</description>
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
 </part>
-<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505">
+<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505" value="VA-0505S">
 <attribute name="OC_FARNELL" value="2079696"/>
 </part>
-<part name="U1" library="Adum1250" deviceset="ADUM1250ARZ" device=""/>
+<part name="IC3" library="Adum1250" deviceset="ADUM1250ARZ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8101,7 +8101,7 @@ Actual dividor: 14.70588</text>
 <attribute name="OC_FARNELL" x="101.6" y="88.9" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="DC1" gate="G$1" x="111.76" y="132.08" rot="R180"/>
-<instance part="U1" gate="A" x="220.98" y="81.28"/>
+<instance part="IC3" gate="A" x="220.98" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -8128,7 +8128,7 @@ Actual dividor: 14.70588</text>
 <label x="127" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="GND1"/>
+<pinref part="IC3" gate="A" pin="GND1"/>
 <wire x1="203.2" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="200.66" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8222,7 +8222,7 @@ Actual dividor: 14.70588</text>
 <label x="144.78" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="SCL1"/>
+<pinref part="IC3" gate="A" pin="SCL1"/>
 <wire x1="203.2" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <label x="200.66" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8239,7 +8239,7 @@ Actual dividor: 14.70588</text>
 <label x="144.78" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="SDA1"/>
+<pinref part="IC3" gate="A" pin="SDA1"/>
 <wire x1="238.76" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
 <label x="241.3" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8261,7 +8261,7 @@ Actual dividor: 14.70588</text>
 <label x="111.76" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="VDD1"/>
+<pinref part="IC3" gate="A" pin="VDD1"/>
 <wire x1="203.2" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
 <label x="200.66" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8340,7 +8340,7 @@ Actual dividor: 14.70588</text>
 <pinref part="X2" gate="-2" pin="KL"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="GND2"/>
+<pinref part="IC3" gate="A" pin="GND2"/>
 <wire x1="203.2" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="200.66" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8367,7 +8367,7 @@ Actual dividor: 14.70588</text>
 <junction x="106.68" y="88.9"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="VDD2"/>
+<pinref part="IC3" gate="A" pin="VDD2"/>
 <wire x1="203.2" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
 <label x="200.66" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -8379,7 +8379,7 @@ Actual dividor: 14.70588</text>
 <label x="147.32" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="SDA2"/>
+<pinref part="IC3" gate="A" pin="SDA2"/>
 <wire x1="238.76" y1="83.82" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
 <label x="241.3" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8391,7 +8391,7 @@ Actual dividor: 14.70588</text>
 <label x="106.68" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="SCL2"/>
+<pinref part="IC3" gate="A" pin="SCL2"/>
 <wire x1="203.2" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
 <label x="200.66" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
