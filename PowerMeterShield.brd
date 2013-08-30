@@ -161,8 +161,8 @@
 
 http://pms.felicitus.org</text>
 <text x="21.59" y="48.5775" size="1.27" layer="25" rot="R90" align="center-right">SCL</text>
-<text x="1.27" y="44.1325" size="1.016" layer="25" align="top-left">Channel 0: Current
-Channel 1: Voltage
+<text x="1.27" y="44.1325" size="1.016" layer="25" align="top-left">ADC Channel 0: Current
+ADC Channel 1: Voltage
 
 </text>
 <text x="1.27" y="49.8475" size="1.016" layer="25" align="top-left">16 Bit: 15 SPS
@@ -198,6 +198,8 @@ Channel 1: Voltage
 <text x="38.1" y="4.7625" size="1.27" layer="25" rot="R270" align="center-right">3V3</text>
 <text x="35.56" y="4.7625" size="1.27" layer="25" rot="R270" align="center-right">RESET</text>
 <text x="33.02" y="4.7625" size="1.27" layer="25" rot="R270" align="center-right">IOREF</text>
+<text x="10.795" y="15.24" size="1.4224" layer="25">DO NOT
+CONNECT MAINS</text>
 </plain>
 <libraries>
 <library name="R-Vishay">
