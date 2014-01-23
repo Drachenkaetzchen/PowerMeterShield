@@ -164,6 +164,8 @@ Channel 1: Voltage
 <text x="55" y="39" size="1.016" layer="25" rot="R90" align="top-right">16 Bit: 15 SPS
 14 Bit: 60 SPS
 12 Bit: 240 SPS</text>
+<text x="63" y="11" size="1.016" layer="25" rot="R90" align="top-left">www.felitek.de
+</text>
 </plain>
 <libraries>
 <library name="R-Vishay">

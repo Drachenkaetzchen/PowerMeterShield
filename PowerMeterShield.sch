@@ -8191,7 +8191,7 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX6520.pdf"&gt; Data s
 <sheets>
 <sheet>
 <plain>
-<text x="10.16" y="167.64" size="1.27" layer="91">Input: 30V/10A max</text>
+<text x="5.08" y="172.72" size="1.27" layer="91">Input: 30V/10A max</text>
 <wire x1="5.08" y1="127" x2="55.88" y2="127" width="0.1524" layer="94"/>
 <wire x1="55.88" y1="127" x2="111.76" y2="127" width="0.1524" layer="94"/>
 <wire x1="111.76" y1="127" x2="172.72" y2="127" width="0.1524" layer="94"/>
@@ -8207,6 +8207,13 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX6520.pdf"&gt; Data s
 <wire x1="111.76" y1="76.2" x2="111.76" y2="127" width="0.1524" layer="94"/>
 <wire x1="111.76" y1="76.2" x2="111.76" y2="48.26" width="0.1524" layer="94"/>
 <wire x1="111.76" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="94"/>
+<text x="58.42" y="172.72" size="1.27" layer="91">Voltage Reference</text>
+<text x="114.3" y="172.72" size="1.27" layer="91">DC-DC Converter</text>
+<text x="175.26" y="172.72" size="1.27" layer="91">Arduino Headers</text>
+<text x="175.26" y="124.46" size="1.27" layer="91">ADC</text>
+<text x="114.3" y="124.46" size="1.27" layer="91">I²C Isolator</text>
+<text x="5.08" y="124.46" size="1.27" layer="91">Bipolar Voltage Measurement</text>
+<text x="114.3" y="73.66" size="1.27" layer="91">Bipolar Current Measurement</text>
 </plain>
 <instances>
 <instance part="RS1" gate="G$1" x="30.48" y="152.4" smashed="yes" rot="MR270">
