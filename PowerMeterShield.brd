@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -151,10 +151,10 @@
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="20"/>
 <hole x="17.78" y="50.8" drill="3.2"/>
 <hole x="68.58" y="7.62" drill="3.2"/>
-<text x="0.7025" y="39.6475" size="1.778" layer="25">IN  +</text>
-<text x="0.9525" y="24.4075" size="1.778" layer="25">OUT +</text>
-<text x="0.9525" y="28.8525" size="1.778" layer="25" align="top-left">GND</text>
-<text x="0.9525" y="13.6125" size="1.778" layer="25" align="top-left">GND</text>
+<text x="0.7025" y="43.4575" size="1.778" layer="25">IN  +</text>
+<text x="0.9525" y="28.2175" size="1.778" layer="25">OUT +</text>
+<text x="0.9525" y="32.6625" size="1.778" layer="25" align="top-left">GND</text>
+<text x="0.9525" y="17.4225" size="1.778" layer="25" align="top-left">GND</text>
 <text x="55.54" y="26.27" size="1.27" layer="21" rot="R90" align="bottom-center">I²C Current and Voltage Meter Shield
 </text>
 <text x="55" y="12.27" size="1.016" layer="25" rot="R90" align="top-left">Channel 0: Current
@@ -1908,6 +1908,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="0.299" y="-0.7218"/>
 </polygon>
 </package>
+<package name="PTC">
+<wire x1="-3.81" y1="1.524" x2="3.81" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.524" x2="3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.524" x2="-3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.524" x2="-3.81" y2="1.524" width="0.2032" layer="21"/>
+<pad name="P$1" x="-2.54" y="0" drill="0.8" diameter="1.8796"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8" diameter="1.8796"/>
+<text x="-3.81" y="1.705" size="0.4318" layer="25">&gt;Name</text>
+<text x="-3.81" y="-2.14" size="0.4318" layer="27">&gt;Value</text>
+</package>
 </packages>
 </library>
 <library name="burr-brown">
@@ -2165,23 +2175,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="PRICE_10" value="0.844" x="60.72" y="-35.96" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1107419RL" x="60.72" y="-35.96" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X1" library="con-wago-500" package="W237-102" value="" x="5.715" y="19.05" smashed="yes" rot="R270">
-<attribute name="PRICE_10" value="0.294" x="-55.245" y="-36.83" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-36.83" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="237-102" x="-55.245" y="-36.83" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="-55.245" y="-36.83" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-36.83" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-1.905" y="24.09" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="10.3538" y="13.9338" size="1.016" layer="25" ratio="10" rot="R90" align="center-left"/>
+<element name="X1" library="con-wago-500" package="W237-102" value="" x="5.715" y="22.86" smashed="yes" rot="R270">
+<attribute name="PRICE_10" value="0.294" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="237-102" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-1.905" y="27.9" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="10.3538" y="17.7438" size="1.016" layer="25" ratio="10" rot="R90" align="center-left"/>
 </element>
-<element name="X2" library="con-wago-500" package="W237-102" value="" x="5.715" y="34.29" smashed="yes" rot="R270">
-<attribute name="PRICE_10" value="0.294" x="-55.245" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="237-102" x="-55.245" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="-55.245" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-31.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-1.905" y="39.33" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="10.3962" y="39.3262" size="1.016" layer="25" ratio="10" rot="R270" align="center-left"/>
+<element name="X2" library="con-wago-500" package="W237-102" value="" x="5.715" y="38.1" smashed="yes" rot="R270">
+<attribute name="PRICE_10" value="0.294" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="237-102" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-1.905" y="43.14" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="10.3962" y="43.1362" size="1.016" layer="25" ratio="10" rot="R270" align="center-left"/>
 </element>
 <element name="U5" library="MCP3428" package="SOIC127P600X175-8N" value="MCP3426A0-E/SN" x="37" y="34" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOIC-8" x="3.98" y="94.96" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2328,13 +2338,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="23.903" y="37.847" size="1.016" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="R24" library="rcl" package="R0805" value="20k" x="28.125" y="35.375" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.395" y="36.01" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="29.395" y="37.28" size="1.016" layer="25" rot="R270"/>
 </element>
 <element name="R22" library="rcl" package="R2010" value="0" x="37.24" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.145" y="12.175" size="1.016" layer="25" rot="R270"/>
 </element>
 <element name="R23" library="rcl" package="R2010" value="0" x="42.73" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.635" y="12.175" size="1.016" layer="25" rot="R270"/>
+</element>
+<element name="F1" library="SparkFun" package="PTC" value="PTCPTH" x="15.24" y="36.83" rot="R180">
+<attribute name="PRICE_10" value="0.59" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" value="RGEF1000-ND" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2367,20 +2381,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="VIN_MEAS" class="1">
 <contactref element="X2" pad="1"/>
-<contactref element="R1" pad="I1"/>
-<wire x1="4.445" y1="36.79" x2="10.21" y2="36.79" width="1.016" layer="1"/>
-<wire x1="10.21" y1="36.79" x2="14" y2="33" width="1.016" layer="1"/>
-<wire x1="14" y1="33" x2="14" y2="28.875" width="1.016" layer="1"/>
-<wire x1="14" y1="28.875" x2="13.85" y2="28.725" width="1.016" layer="1"/>
+<contactref element="F1" pad="P$2"/>
+<wire x1="12.66" y1="36.79" x2="12.7" y2="36.83" width="3.302" layer="16"/>
+<wire x1="4.445" y1="40.6" x2="10.2" y2="40.6" width="3.302" layer="16"/>
+<wire x1="10.2" y1="40.6" x2="12.7" y2="38.1" width="3.302" layer="16"/>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="36.83" width="3.302" layer="16"/>
 </signal>
 <signal name="V_MEAS" class="1">
 <contactref element="X1" pad="1"/>
 <contactref element="R1" pad="I2"/>
 <contactref element="R7" pad="1"/>
-<wire x1="4.445" y1="21.55" x2="13.575" y2="21.55" width="1.016" layer="1"/>
-<wire x1="13.575" y1="21.55" x2="13.85" y2="21.275" width="1.016" layer="1"/>
 <wire x1="14.05" y1="18" x2="14.05" y2="21.075" width="1.016" layer="1"/>
 <wire x1="14.05" y1="21.075" x2="13.85" y2="21.275" width="1.016" layer="1"/>
+<wire x1="4.445" y1="25.36" x2="6.39" y2="25.36" width="3.302" layer="1"/>
+<wire x1="6.39" y1="25.36" x2="10.16" y2="21.59" width="3.302" layer="1"/>
+<wire x1="10.16" y1="21.59" x2="13.535" y2="21.59" width="3.302" layer="1"/>
+<wire x1="13.535" y1="21.59" x2="13.85" y2="21.275" width="3.302" layer="1"/>
 </signal>
 <signal name="ADC2">
 <contactref element="U5" pad="7"/>
@@ -2743,6 +2759,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="36.25" y1="16.75" x2="34.5" y2="15" width="0.3048" layer="16"/>
 <via x="34.5" y="15" extent="1-16" drill="0.6"/>
 <wire x1="34.5" y1="15" x2="36.05" y2="15" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$3">
+<contactref element="R1" pad="I1"/>
+<contactref element="F1" pad="P$1"/>
+<wire x1="17.78" y1="36.83" x2="17.78" y2="35.56" width="3.302" layer="1"/>
+<wire x1="17.78" y1="35.56" x2="13.97" y2="31.75" width="3.302" layer="1"/>
+<wire x1="13.97" y1="31.75" x2="13.97" y2="28.845" width="3.302" layer="1"/>
+<wire x1="13.97" y1="28.845" x2="13.85" y2="28.725" width="3.302" layer="1"/>
 </signal>
 </signals>
 </board>
