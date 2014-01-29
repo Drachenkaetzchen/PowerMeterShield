@@ -169,7 +169,7 @@ Channel 1: Voltage
 <text x="66.365" y="13.57" size="1.016" layer="25" rot="R90" align="center-left">±30V ±10A DC</text>
 <rectangle x1="62.365" y1="10.57" x2="64.365" y2="12.57" layer="25"/>
 <rectangle x1="65.365" y1="10.57" x2="67.365" y2="12.57" layer="25"/>
-<text x="12.7" y="45.72" size="1.016" layer="25" align="center">www.felitek.de</text>
+<text x="13.335" y="47.625" size="1.016" layer="25" align="center">www.felitek.de</text>
 <rectangle x1="63.5" y1="35.56" x2="67.31" y2="48.26" layer="25"/>
 <text x="65.27" y="30.97" size="1.016" layer="25" rot="R90" align="center-left">Serial</text>
 </plain>
@@ -2253,7 +2253,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="MPN" value="MAX6520EUR-T" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MAXIM" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="21.095" y="18.405" size="1.016" layer="25" align="center-left"/>
+<attribute name="NAME" x="22.365" y="18.405" size="1.016" layer="25" align="center-left"/>
 </element>
 <element name="R3" library="rcl" package="R0805" value="20k" x="33" y="24.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.75" y="26.75" size="1.016" layer="25" rot="R90" align="center-left"/>
@@ -2314,7 +2314,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_FARNELL" value="2310707" x="43" y="21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="45.25" y="21" size="1.016" layer="25" align="center-left"/>
 </element>
-<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.81" y="45.72"/>
+<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.81" y="47.625"/>
 <element name="R20" library="rcl" package="R2010" value="0" x="43" y="44.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.095" y="41.115" size="1.016" layer="25" rot="R90"/>
 </element>
@@ -2656,7 +2656,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U3" pad="3"/>
 <wire x1="25.306" y1="35.95" x2="25.306" y2="36.694" width="0.3048" layer="1"/>
 <wire x1="25.306" y1="36.694" x2="24.625" y2="37.375" width="0.3048" layer="1"/>
-<via x="24.625" y="37.375" extent="1-16" drill="0.6" shape="square"/>
+<via x="24.625" y="37.375" extent="1-16" drill="0.6"/>
 <wire x1="24.625" y1="37.375" x2="24.625" y2="25.625" width="0.3048" layer="16"/>
 <wire x1="20.275" y1="21.275" x2="22.875" y2="23.875" width="0.3048" layer="1"/>
 <wire x1="22.875" y1="23.875" x2="22.875" y2="24.75" width="0.3048" layer="1"/>
