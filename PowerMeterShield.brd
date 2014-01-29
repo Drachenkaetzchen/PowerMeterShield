@@ -2314,7 +2314,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_FARNELL" value="2310707" x="43" y="21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="45.25" y="21" size="1.016" layer="25" align="center-left"/>
 </element>
-<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.81" y="47.625"/>
+<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.175" y="47.625"/>
 <element name="R20" library="rcl" package="R2010" value="0" x="43" y="44.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.095" y="41.115" size="1.016" layer="25" rot="R90"/>
 </element>
@@ -2437,18 +2437,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U4" pad="1"/>
 <via x="39" y="45.04" extent="1-16" drill="0.6"/>
 <wire x1="38.5" y1="41.5" x2="36" y2="39" width="0.3048" layer="16"/>
-<wire x1="37" y1="35.25" x2="38.5" y2="33.75" width="0.3048" layer="16"/>
-<wire x1="38.5" y1="33.75" x2="38.5" y2="28.5" width="0.3048" layer="16"/>
+<wire x1="38.5" y1="34.125" x2="38.5" y2="28.5" width="0.3048" layer="16"/>
 <wire x1="38.5" y1="28.5" x2="33" y2="23" width="0.3048" layer="16"/>
 <wire x1="33" y1="23" x2="33" y2="2.56" width="0.3048" layer="16"/>
 <wire x1="33" y1="2.56" x2="33.02" y2="2.54" width="0.3048" layer="16"/>
-<wire x1="37" y1="35.25" x2="37" y2="35.625" width="0.3048" layer="16"/>
-<wire x1="37" y1="35.625" x2="36" y2="36.625" width="0.3048" layer="16"/>
 <wire x1="36" y1="36.625" x2="36" y2="39" width="0.3048" layer="16"/>
 <wire x1="38.5" y1="41.5" x2="38.5" y2="44.54" width="0.3048" layer="16"/>
 <wire x1="38.5" y1="44.54" x2="39" y2="45.04" width="0.3048" layer="16"/>
 <wire x1="39" y1="45.04" x2="39" y2="46.9088" width="0.3048" layer="1"/>
 <wire x1="39" y1="46.9088" x2="38.905" y2="47.0038" width="0.3048" layer="1"/>
+<wire x1="38.5" y1="34.125" x2="36" y2="36.625" width="0.3048" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="JP3" pad="4"/>
@@ -2472,15 +2470,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="X1" pad="2"/>
 <contactref element="X2" pad="2"/>
 <polygon width="0.4064" layer="1">
-<vertex x="1.27" y="2.54"/>
-<vertex x="1.27" y="52.07"/>
+<vertex x="0" y="2.54"/>
+<vertex x="0" y="50.8"/>
 <vertex x="2.54" y="53.34"/>
-<vertex x="6.35" y="53.34"/>
-<vertex x="6.35" y="43.18"/>
+<vertex x="5.715" y="53.34"/>
+<vertex x="5.715" y="43.18"/>
 <vertex x="59.69" y="43.18"/>
 <vertex x="59.69" y="10.16"/>
-<vertex x="5.3975" y="10.16"/>
-<vertex x="5.3975" y="0"/>
+<vertex x="6.0325" y="10.16"/>
+<vertex x="6.0325" y="0"/>
 <vertex x="3.81" y="0"/>
 </polygon>
 <contactref element="U4" pad="5"/>
