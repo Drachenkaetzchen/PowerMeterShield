@@ -2311,8 +2311,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R6" library="rcl" package="R0805" value="200k" x="39" y="24.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="39" y="26.75" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="R7" library="rcl" package="R0805" value="6.04M" x="16.27" y="18" smashed="yes">
-<attribute name="NAME" x="14.26" y="16.145" size="1.016" layer="25" align="center-left"/>
+<element name="R7" library="rcl" package="R0805" value="6.04M" x="16.27" y="16.73" smashed="yes">
+<attribute name="NAME" x="14.26" y="14.875" size="1.016" layer="25" align="center-left"/>
 </element>
 <element name="R9" library="rcl" package="R0805" value="412k" x="37" y="15" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.115" y="13.27" size="1.016" layer="25" align="center-left"/>
@@ -2383,7 +2383,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="VIN_MEAS" class="1">
 <contactref element="X2" pad="1"/>
 <contactref element="F1" pad="P$2"/>
-<polygon width="0.3048" layer="1" isolate="0.254">
+<polygon width="0.3048" layer="1" isolate="0.4064">
 <vertex x="14.605" y="40.005"/>
 <vertex x="14.605" y="35.56"/>
 <vertex x="9.525" y="30.48"/>
@@ -2397,8 +2397,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="X1" pad="1"/>
 <contactref element="R1" pad="I2"/>
 <contactref element="R7" pad="1"/>
-<wire x1="15.32" y1="18" x2="15.32" y2="21.075" width="1.016" layer="1"/>
-<polygon width="0.3048" layer="1" thermals="no">
+<wire x1="15.32" y1="16.73" x2="15.32" y2="21.075" width="1.016" layer="1"/>
+<polygon width="0.3048" layer="1" isolate="0.4064" thermals="no">
 <vertex x="20.32" y="19.05"/>
 <vertex x="20.32" y="23.495"/>
 <vertex x="7.62" y="23.495"/>
@@ -2494,7 +2494,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="C1" pad="2"/>
 <contactref element="X1" pad="2"/>
 <contactref element="X2" pad="2"/>
-<polygon width="0.4064" layer="1" rank="3">
+<polygon width="0.4064" layer="1" orphans="yes" rank="3">
 <vertex x="0" y="2.54"/>
 <vertex x="0" y="50.8"/>
 <vertex x="2.54" y="53.34"/>
@@ -2765,8 +2765,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="34.6378" y1="17.095" x2="33.095" y2="17.095" width="0.3048" layer="1"/>
 <wire x1="33.095" y1="17.095" x2="32.5" y2="16.5" width="0.3048" layer="1"/>
 <wire x1="32.5" y1="16.5" x2="21.5" y2="16.5" width="0.3048" layer="1"/>
-<wire x1="21.5" y1="16.5" x2="20" y2="18" width="0.3048" layer="1"/>
-<wire x1="20" y1="18" x2="17.22" y2="18" width="0.3048" layer="1"/>
+<wire x1="21.5" y1="16.5" x2="21.27" y2="16.73" width="0.3048" layer="1"/>
+<wire x1="21.27" y1="16.73" x2="17.22" y2="16.73" width="0.3048" layer="1"/>
 <wire x1="36" y1="23.55" x2="36" y2="22.25" width="0.3048" layer="1"/>
 <wire x1="36" y1="22.25" x2="36.25" y2="22" width="0.3048" layer="1"/>
 <via x="36.25" y="22" extent="1-16" drill="0.6"/>
@@ -2778,7 +2778,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="N$3">
 <contactref element="R1" pad="I1"/>
 <contactref element="F1" pad="P$1"/>
-<polygon width="0.3048" layer="1" thermals="no" rank="2">
+<polygon width="0.3048" layer="1" isolate="0.4064" thermals="no" rank="2">
 <vertex x="15.875" y="40.005"/>
 <vertex x="15.875" y="34.925"/>
 <vertex x="12.7" y="31.75"/>
