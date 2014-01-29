@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -170,7 +170,7 @@ I²C Address: 0x68</text>
 <rectangle x1="65.365" y1="10.57" x2="67.365" y2="12.57" layer="25"/>
 <text x="13.335" y="47.625" size="1.016" layer="25" align="center">www.felitek.de</text>
 <rectangle x1="63.5" y1="35.56" x2="67.31" y2="48.26" layer="25"/>
-<text x="65.27" y="30.97" size="1.016" layer="25" rot="R90" align="center-left">Serial</text>
+<text x="65.27" y="30.335" size="1.016" layer="25" rot="R90" align="center-left">Serial#</text>
 </plain>
 <libraries>
 <library name="R-Vishay">
@@ -2346,9 +2346,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R23" library="rcl" package="R2010" value="0" x="42.73" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.635" y="12.175" size="1.016" layer="25" rot="R270"/>
 </element>
-<element name="F1" library="SparkFun" package="PTC" value="PTCPTH" x="15.24" y="36.83" rot="R180">
+<element name="F1" library="SparkFun" package="PTC" value="PTCPTH" x="15.24" y="36.83" smashed="yes" rot="R180">
 <attribute name="PRICE_10" value="0.59" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_DIGIKEY" value="RGEF1000-ND" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.43" y="38.535" size="1.016" layer="25"/>
 </element>
 </elements>
 <signals>

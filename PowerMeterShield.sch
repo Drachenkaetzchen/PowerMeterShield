@@ -8196,6 +8196,105 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX6520.pdf"&gt; Data s
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PTC">
+<wire x1="-3.81" y1="1.524" x2="3.81" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.524" x2="3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.524" x2="-3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.524" x2="-3.81" y2="1.524" width="0.2032" layer="21"/>
+<pad name="P$1" x="-2.54" y="0" drill="0.8" diameter="1.8796"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8" diameter="1.8796"/>
+<text x="-3.81" y="1.705" size="0.4318" layer="25">&gt;Name</text>
+<text x="-3.81" y="-2.14" size="0.4318" layer="27">&gt;Value</text>
+</package>
+<package name="PTC-1206">
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-1.016" x2="0.254" y2="1.016" width="0.127" layer="51"/>
+<wire x1="0.254" y1="1.016" x2="1.143" y2="1.016" width="0.127" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="-1.524" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.524" y="-1.651" size="0.4064" layer="27">&gt;Value</text>
+</package>
+<package name="0603">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PTC">
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.302" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTC" prefix="F">
+<description>&lt;b&gt;Resettable Fuse PTC&lt;/b&gt;
+Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="PTC">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="PTC-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8304,6 +8403,10 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX6520.pdf"&gt; Data s
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="20k"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
+<part name="F1" library="SparkFun" deviceset="PTC" device="PTH">
+<attribute name="OC_DIGIKEY" value="RGEF1000-ND"/>
+<attribute name="PRICE_10" value="0.59"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -8347,11 +8450,11 @@ Variant A only</text>
 <wire x1="99.06" y1="137.16" x2="99.06" y2="175.26" width="0.1524" layer="94"/>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="25.4" y="154.94" smashed="yes" rot="MR270">
-<attribute name="OC_FARNELL" x="25.4" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
-<attribute name="PRICE_10" x="25.4" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
-<attribute name="NAME" x="24.0284" y="159.512" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="29.083" y="159.512" size="1.778" layer="96" rot="MR270"/>
+<instance part="R1" gate="G$1" x="40.64" y="154.94" smashed="yes" rot="MR270">
+<attribute name="OC_FARNELL" x="40.64" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
+<attribute name="PRICE_10" x="40.64" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
+<attribute name="NAME" x="39.2684" y="159.512" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="44.323" y="159.512" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="GND1" gate="G$1" x="17.78" y="142.24"/>
 <instance part="X1" gate="-1" x="10.16" y="167.64">
@@ -8472,6 +8575,10 @@ Variant A only</text>
 <instance part="R24" gate="G$1" x="60.96" y="106.68" rot="R90"/>
 <instance part="R22" gate="G$1" x="38.1" y="40.64"/>
 <instance part="R23" gate="G$1" x="38.1" y="33.02"/>
+<instance part="F1" gate="G$1" x="33.02" y="144.78" rot="R180">
+<attribute name="PRICE_10" x="33.02" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="33.02" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8510,21 +8617,20 @@ Variant A only</text>
 </net>
 <net name="VIN_MEAS" class="1">
 <segment>
-<wire x1="20.32" y1="152.4" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="152.4" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="144.78" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-1" pin="KL"/>
-<pinref part="R1" gate="G$1" pin="I1"/>
-<wire x1="25.4" y1="147.32" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="V_MEAS" class="1">
 <segment>
-<wire x1="25.4" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="KL"/>
 <pinref part="R1" gate="G$1" pin="I2"/>
-<wire x1="25.4" y1="162.56" x2="25.4" y2="167.64" width="0.1524" layer="91"/>
-<label x="25.4" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="40.64" y1="162.56" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
+<label x="40.64" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -8870,8 +8976,8 @@ Variant A only</text>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="S2"/>
-<wire x1="30.48" y1="162.56" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
-<label x="30.48" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="45.72" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
+<label x="45.72" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IN+"/>
@@ -8887,8 +8993,8 @@ Variant A only</text>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="S1"/>
-<wire x1="30.48" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
-<label x="30.48" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="45.72" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="45.72" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IN-"/>
@@ -8953,27 +9059,18 @@ Variant A only</text>
 <junction x="195.58" y="165.1"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="I1"/>
+<wire x1="40.64" y1="149.86" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,205.74,114.3,IC1,VDD,+5V/2,,,"/>
-<approved hash="104,1,205.74,91.44,IC1,VSS,GNDI,,,"/>
-<approved hash="104,1,127,111.76,IC3,VDD1,IOREF,,,"/>
-<approved hash="104,1,127,109.22,IC3,VDD2,+5V/2,,,"/>
-<approved hash="104,1,154.94,63.5,U1,V+,+5V/2,,,"/>
-<approved hash="104,1,81.28,157.48,IC2,GND,GNDI,,,"/>
-<approved hash="104,1,53.34,76.2,U2,!PD,+5V/2,,,"/>
-<approved hash="104,1,48.26,38.1,IC4,V+,+5V/2,,,"/>
-<approved hash="104,1,48.26,22.86,IC4,V-,GNDI,,,"/>
-<approved hash="206,1,190.5,63.5,ADC2,,,,,"/>
-<approved hash="206,1,48.26,27.94,ADC2,,,,,"/>
-<approved hash="113,1,16.9426,162.56,X1,,,,,"/>
-<approved hash="113,1,16.9426,149.86,X2,,,,,"/>
-<approved hash="113,1,192.909,139.937,JP1,,,,,"/>
-<approved hash="113,1,223.389,139.937,JP2,,,,,"/>
-<approved hash="113,1,200.791,157.243,JP3,,,,,"/>
-<approved hash="113,1,228.731,157.243,JP4,,,,,"/>
 <approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
 </errors>
 </schematic>
