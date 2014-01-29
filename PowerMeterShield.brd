@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -151,10 +151,7 @@
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="20"/>
 <hole x="17.78" y="50.8" drill="3.2"/>
 <hole x="68.58" y="7.62" drill="3.2"/>
-<text x="0.7025" y="43.4575" size="1.778" layer="25">IN  +</text>
-<text x="0.9525" y="28.2175" size="1.778" layer="25">OUT +</text>
-<text x="0.9525" y="32.6625" size="1.778" layer="25" align="top-left">GND</text>
-<text x="0.9525" y="17.4225" size="1.778" layer="25" align="top-left">GND</text>
+<text x="11.43" y="31.155" size="5.08" layer="25" rot="R180" align="center">+</text>
 <text x="55.54" y="26.27" size="1.27" layer="21" rot="R90" align="bottom-center">I²C Current and Voltage Meter Shield
 </text>
 <text x="55" y="12.27" size="1.016" layer="25" rot="R90" align="top-left">Channel 0: Current
@@ -168,9 +165,16 @@ I²C Address: 0x68</text>
 <text x="66.365" y="13.57" size="1.016" layer="25" rot="R90" align="center-left">±30V ±10A DC</text>
 <rectangle x1="62.365" y1="10.57" x2="64.365" y2="12.57" layer="25"/>
 <rectangle x1="65.365" y1="10.57" x2="67.365" y2="12.57" layer="25"/>
-<text x="13.335" y="47.625" size="1.016" layer="25" align="center">www.felitek.de</text>
+<text x="13.335" y="47.9425" size="1.016" layer="25" align="center">www.felitek.de</text>
 <rectangle x1="63.5" y1="35.56" x2="67.31" y2="48.26" layer="25"/>
 <text x="65.27" y="30.335" size="1.016" layer="25" rot="R90" align="center-left">Serial#</text>
+<rectangle x1="0" y1="32.385" x2="9.525" y2="43.815" layer="40"/>
+<rectangle x1="0" y1="3.175" x2="11.43" y2="12.065" layer="40"/>
+<text x="11.43" y="26.075" size="5.08" layer="25" rot="R180" align="center">-</text>
+<text x="11.43" y="20.36" size="5.08" layer="25" rot="R180" align="center">+</text>
+<text x="11.43" y="15.28" size="5.08" layer="25" rot="R180" align="center">-</text>
+<text x="9.2075" y="11.1125" size="1.016" layer="21" rot="R180" align="center-left">Input</text>
+<text x="9.2075" y="33.9725" size="1.016" layer="21" rot="R180" align="center-left">Output</text>
 </plain>
 <libraries>
 <library name="R-Vishay">
@@ -2171,27 +2175,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="R-Vishay" package="CSM3637M" value="0.005" x="15" y="25" smashed="yes">
-<attribute name="PRICE_10" value="0.844" x="60.72" y="-35.96" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1107419RL" x="60.72" y="-35.96" size="1.778" layer="27" display="off"/>
+<element name="R1" library="R-Vishay" package="CSM3637M" value="0.005" x="17.54" y="25" smashed="yes">
+<attribute name="PRICE_10" value="0.844" x="63.26" y="-35.96" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1107419RL" x="63.26" y="-35.96" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X1" library="con-wago-500" package="W237-102" value="" x="5.715" y="22.86" smashed="yes" rot="R270">
-<attribute name="PRICE_10" value="0.294" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="237-102" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-1.905" y="27.9" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="10.3538" y="17.7438" size="1.016" layer="25" ratio="10" rot="R90" align="center-left"/>
+<element name="X1" library="con-wago-500" package="W237-102" value="" x="5.715" y="17.145" smashed="yes" rot="R270">
+<attribute name="PRICE_10" value="0.294" x="-55.245" y="-38.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-38.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="237-102" x="-55.245" y="-38.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="-55.245" y="-38.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-38.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-1.905" y="22.185" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="0.3175" y="11.1125" size="1.016" layer="25" ratio="10" align="center-left"/>
 </element>
-<element name="X2" library="con-wago-500" package="W237-102" value="" x="5.715" y="38.1" smashed="yes" rot="R270">
-<attribute name="PRICE_10" value="0.294" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="237-102" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-1.905" y="43.14" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="10.3962" y="43.1362" size="1.016" layer="25" ratio="10" rot="R270" align="center-left"/>
+<element name="X2" library="con-wago-500" package="W237-102" value="" x="5.715" y="27.94" smashed="yes" rot="R270">
+<attribute name="PRICE_10" value="0.294" x="-55.245" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-55.245" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="237-102" x="-55.245" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="-55.245" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1717001" x="-55.245" y="-38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-1.905" y="32.98" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="0.3175" y="33.9725" size="1.016" layer="25" ratio="10" align="center-left"/>
 </element>
 <element name="U5" library="MCP3428" package="SOIC127P600X175-8N" value="MCP3426A0-E/SN" x="37" y="34" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOIC-8" x="3.98" y="94.96" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2231,14 +2235,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="PRICE_100" value="0.005" x="43" y="35" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2310707" x="43" y="35" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DC1" library="dc-dc-converter" package="4SIL" value="VA-0505S" x="6.35" y="6.35" smashed="yes" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="2079696" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="12.065" y="8.64" size="1.016" layer="25" rot="R180" align="center-left"/>
-<attribute name="PRICE_100" value="2,89" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_REICHELT" value="SIM1-0505S DIL8" x="6.35" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DC1" library="dc-dc-converter" package="4SIL" value="VA-0505S" x="22.86" y="8.89" smashed="yes" rot="R90">
+<attribute name="OC_NEWARK" value="unknown" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2079696" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="25.15" y="3.175" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="PRICE_100" value="2,89" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SIM1-0505S DIL8" x="22.86" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U4" library="Adum1250" package="SOIC127P600X175-8N" value="ADUM1250ARZ" x="37" y="44.54" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SOIC-8" x="37" y="44.54" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2255,14 +2259,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="MPN" value="INA170EA/2K5" x="28" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="Texas Instruments" x="28" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1575435" x="28" y="25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="25.085" y="23.1706" size="1.016" layer="25" ratio="10" rot="SR90"/>
+<attribute name="NAME" x="25.085" y="23.1706" size="1.016" layer="25" ratio="10" rot="SR90" align="center-left"/>
 </element>
-<element name="U6" library="maxim" package="SOT23" value="ISL21080" x="24.5" y="21" smashed="yes" rot="R90">
-<attribute name="OC_NEWARK" value="02J4586" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MAX6520EUR-T" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="MAXIM" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="24.5" y="21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="22.365" y="18.405" size="1.016" layer="25" align="center-left"/>
+<element name="U6" library="maxim" package="SOT23" value="ISL21080" x="25.135" y="21" smashed="yes" rot="R90">
+<attribute name="OC_NEWARK" value="02J4586" x="25.135" y="21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MAX6520EUR-T" x="25.135" y="21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MAXIM" x="25.135" y="21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="25.135" y="21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23" y="18.405" size="1.016" layer="25" align="center-left"/>
 </element>
 <element name="R3" library="rcl" package="R0805" value="20k" x="33" y="24.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.75" y="26.75" size="1.016" layer="25" rot="R90" align="center-left"/>
@@ -2307,8 +2311,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="R6" library="rcl" package="R0805" value="200k" x="39" y="24.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="39" y="26.75" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="R7" library="rcl" package="R0805" value="6.04M" x="15" y="18" smashed="yes">
-<attribute name="NAME" x="12.99" y="16.145" size="1.016" layer="25" align="center-left"/>
+<element name="R7" library="rcl" package="R0805" value="6.04M" x="16.27" y="18" smashed="yes">
+<attribute name="NAME" x="14.26" y="16.145" size="1.016" layer="25" align="center-left"/>
 </element>
 <element name="R9" library="rcl" package="R0805" value="412k" x="37" y="15" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.115" y="13.27" size="1.016" layer="25" align="center-left"/>
@@ -2323,33 +2327,33 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_FARNELL" value="2310707" x="43" y="21" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="45.25" y="21" size="1.016" layer="25" align="center-left"/>
 </element>
-<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.175" y="47.625"/>
+<element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.175" y="47.9425"/>
 <element name="R20" library="rcl" package="R2010" value="0" x="43" y="44.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="46.095" y="41.115" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="45.4025" y="41.275" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
 <element name="R21" library="rcl" package="R2010" value="0" x="32" y="44.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.095" y="41.365" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="29.5275" y="41.275" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
 <element name="U3" library="burr-brown" package="SOT23-5" value="INA138" x="24" y="35" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="80K5906" x="24" y="35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="INA138NA/250" x="24" y="35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TEXAS INSTRUMENTS" x="24" y="35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1564888" x="24" y="35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.903" y="37.847" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="23.5855" y="37.5295" size="1.016" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R24" library="rcl" package="R0805" value="20k" x="28.125" y="35.375" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.395" y="37.28" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="28.125" y="40.1375" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R22" library="rcl" package="R2010" value="0" x="37.24" y="9" smashed="yes" rot="R270">
-<attribute name="NAME" x="39.145" y="12.175" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="39.4625" y="12.175" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R23" library="rcl" package="R2010" value="0" x="42.73" y="9" smashed="yes" rot="R270">
-<attribute name="NAME" x="44.635" y="12.175" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="44.9525" y="12.175" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="F1" library="SparkFun" package="PTC" value="PTCPTH" x="15.24" y="36.83" smashed="yes" rot="R180">
 <attribute name="PRICE_10" value="0.59" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_DIGIKEY" value="RGEF1000-ND" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="11.43" y="38.535" size="1.016" layer="25"/>
+<attribute name="NAME" x="11.43" y="39.4875" size="1.016" layer="25" align="center-left"/>
 </element>
 </elements>
 <signals>
@@ -2379,21 +2383,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="VIN_MEAS" class="1">
 <contactref element="X2" pad="1"/>
 <contactref element="F1" pad="P$2"/>
-<wire x1="12.66" y1="36.79" x2="12.7" y2="36.83" width="3.302" layer="16"/>
-<wire x1="4.445" y1="40.6" x2="10.2" y2="40.6" width="3.302" layer="16"/>
-<wire x1="10.2" y1="40.6" x2="12.7" y2="38.1" width="3.302" layer="16"/>
-<wire x1="12.7" y1="38.1" x2="12.7" y2="36.83" width="3.302" layer="16"/>
+<polygon width="0.3048" layer="1" isolate="0.254">
+<vertex x="14.605" y="40.005"/>
+<vertex x="14.605" y="35.56"/>
+<vertex x="9.525" y="30.48"/>
+<vertex x="9.525" y="28.575"/>
+<vertex x="2.54" y="28.575"/>
+<vertex x="2.54" y="34.29"/>
+<vertex x="8.89" y="40.005"/>
+</polygon>
 </signal>
 <signal name="V_MEAS" class="1">
 <contactref element="X1" pad="1"/>
 <contactref element="R1" pad="I2"/>
 <contactref element="R7" pad="1"/>
-<wire x1="14.05" y1="18" x2="14.05" y2="21.075" width="1.016" layer="1"/>
-<wire x1="14.05" y1="21.075" x2="13.85" y2="21.275" width="1.016" layer="1"/>
-<wire x1="4.445" y1="25.36" x2="6.39" y2="25.36" width="3.302" layer="1"/>
-<wire x1="6.39" y1="25.36" x2="10.16" y2="21.59" width="3.302" layer="1"/>
-<wire x1="10.16" y1="21.59" x2="13.535" y2="21.59" width="3.302" layer="1"/>
-<wire x1="13.535" y1="21.59" x2="13.85" y2="21.275" width="3.302" layer="1"/>
+<wire x1="15.32" y1="18" x2="15.32" y2="21.075" width="1.016" layer="1"/>
+<polygon width="0.3048" layer="1" thermals="no">
+<vertex x="20.32" y="19.05"/>
+<vertex x="20.32" y="23.495"/>
+<vertex x="7.62" y="23.495"/>
+<vertex x="6.985" y="22.86"/>
+<vertex x="2.54" y="22.86"/>
+<vertex x="2.54" y="17.145"/>
+<vertex x="8.255" y="17.145"/>
+<vertex x="10.16" y="19.05"/>
+</polygon>
 </signal>
 <signal name="ADC2">
 <contactref element="U5" pad="7"/>
@@ -2464,15 +2478,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="JP3" pad="4"/>
 <contactref element="DC1" pad="2"/>
 <contactref element="R22" pad="2"/>
-<wire x1="7.62" y1="6.35" x2="7.62" y2="6.87" width="0.3048" layer="1"/>
-<wire x1="7.62" y1="6.87" x2="8.375" y2="7.625" width="0.3048" layer="1"/>
 <wire x1="40.64" y1="2.54" x2="40.64" y2="5.08" width="0.3048" layer="1"/>
 <wire x1="40.64" y1="5.08" x2="39.37" y2="6.35" width="0.3048" layer="1"/>
 <wire x1="39.37" y1="6.35" x2="36.83" y2="6.35" width="0.3048" layer="1"/>
 <wire x1="37.24" y1="6.8" x2="37.24" y2="6.76" width="0.3048" layer="1"/>
 <wire x1="37.24" y1="6.76" x2="36.83" y2="6.35" width="0.3048" layer="1"/>
-<wire x1="8.375" y1="7.625" x2="35.555" y2="7.625" width="0.3048" layer="1"/>
 <wire x1="35.555" y1="7.625" x2="36.83" y2="6.35" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="7.62" x2="35.55" y2="7.62" width="0.3048" layer="1"/>
+<wire x1="35.55" y1="7.62" x2="35.555" y2="7.625" width="0.3048" layer="1"/>
 </signal>
 <signal name="GNDI">
 <contactref element="DC1" pad="3"/>
@@ -2481,7 +2494,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="C1" pad="2"/>
 <contactref element="X1" pad="2"/>
 <contactref element="X2" pad="2"/>
-<polygon width="0.4064" layer="1">
+<polygon width="0.4064" layer="1" rank="3">
 <vertex x="0" y="2.54"/>
 <vertex x="0" y="50.8"/>
 <vertex x="2.54" y="53.34"/>
@@ -2515,6 +2528,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U3" pad="2"/>
 <contactref element="R24" pad="1"/>
 <contactref element="R23" pad="1"/>
+<polygon width="0.3048" layer="16">
+<vertex x="8.89" y="12.7"/>
+<vertex x="8.89" y="29.21"/>
+<vertex x="0" y="29.21"/>
+<vertex x="0" y="12.7"/>
+</polygon>
 </signal>
 <signal name="+5V/2">
 <contactref element="DC1" pad="4"/>
@@ -2563,17 +2582,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="28.75" y1="23.25" x2="28.5" y2="23.5" width="0.3048" layer="1"/>
 <wire x1="30.7" y1="19.5" x2="32" y2="19.5" width="0.3048" layer="1"/>
 <wire x1="32" y1="19.5" x2="33.135" y2="18.365" width="0.3048" layer="1"/>
-<wire x1="25.6" y1="20.05" x2="25.6" y2="19.4" width="0.3048" layer="1"/>
-<wire x1="25.6" y1="19.4" x2="26.5" y2="18.5" width="0.3048" layer="1"/>
 <wire x1="26.5" y1="18.5" x2="27" y2="18" width="0.3048" layer="1"/>
 <wire x1="27" y1="18" x2="30.75" y2="18" width="0.3048" layer="1"/>
 <wire x1="30.75" y1="18" x2="31" y2="18.25" width="0.3048" layer="1"/>
 <wire x1="31" y1="18.25" x2="31" y2="19.45" width="0.3048" layer="1"/>
-<wire x1="2.54" y1="6.35" x2="2.54" y2="9.54" width="0.3048" layer="1"/>
-<wire x1="2.54" y1="9.54" x2="5" y2="12" width="0.3048" layer="1"/>
-<wire x1="5" y1="12" x2="23" y2="12" width="0.3048" layer="1"/>
-<wire x1="23" y1="12" x2="26" y2="15" width="0.3048" layer="1"/>
 <via x="26" y="15" extent="1-16" drill="0.6"/>
+<wire x1="23.7" y1="12.7" x2="26" y2="15" width="0.3048" layer="1"/>
 <wire x1="26" y1="15" x2="26" y2="18" width="0.3048" layer="16"/>
 <via x="26" y="18" extent="1-16" drill="0.6"/>
 <wire x1="26" y1="18" x2="26.5" y2="18.5" width="0.3048" layer="1"/>
@@ -2595,6 +2609,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="37.24" y1="11.2" x2="29.8" y2="11.2" width="0.3048" layer="1"/>
 <wire x1="29.8" y1="11.2" x2="26" y2="15" width="0.3048" layer="1"/>
 <wire x1="38.905" y1="37.595" x2="38.905" y2="42.0762" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="12.7" x2="23.7" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="26.235" y1="20.05" x2="26.235" y2="18.765" width="0.3048" layer="1"/>
+<wire x1="26.235" y1="18.765" x2="26.5" y2="18.5" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDAI">
 <contactref element="U5" pad="4"/>
@@ -2662,34 +2679,35 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="CURRENT+">
 <contactref element="U1" pad="2"/>
 <contactref element="R1" pad="S2"/>
-<wire x1="19.125" y1="21.275" x2="20.275" y2="21.275" width="0.3048" layer="1"/>
 <contactref element="U3" pad="3"/>
 <wire x1="25.306" y1="35.95" x2="25.306" y2="36.694" width="0.3048" layer="1"/>
 <wire x1="25.306" y1="36.694" x2="24.625" y2="37.375" width="0.3048" layer="1"/>
 <via x="24.625" y="37.375" extent="1-16" drill="0.6"/>
 <wire x1="24.625" y1="37.375" x2="24.625" y2="25.625" width="0.3048" layer="16"/>
-<wire x1="20.275" y1="21.275" x2="22.875" y2="23.875" width="0.3048" layer="1"/>
-<wire x1="22.875" y1="23.875" x2="22.875" y2="24.75" width="0.3048" layer="1"/>
 <wire x1="22.875" y1="24.75" x2="23.25" y2="25.125" width="0.3048" layer="1"/>
 <via x="23.25" y="25.125" extent="1-16" drill="0.6"/>
 <wire x1="23.25" y1="25.125" x2="24.125" y2="25.125" width="0.3048" layer="16"/>
 <wire x1="24.125" y1="25.125" x2="24.625" y2="25.625" width="0.3048" layer="16"/>
 <wire x1="25.8156" y1="25.3302" x2="23.4552" y2="25.3302" width="0.3048" layer="1"/>
 <wire x1="23.4552" y1="25.3302" x2="23.25" y2="25.125" width="0.3048" layer="1"/>
+<wire x1="22.875" y1="24.75" x2="22.875" y2="21.605" width="0.3048" layer="1"/>
+<wire x1="22.875" y1="21.605" x2="22.225" y2="20.955" width="0.3048" layer="1"/>
+<wire x1="22.225" y1="20.955" x2="21.985" y2="20.955" width="0.3048" layer="1"/>
+<wire x1="21.985" y1="20.955" x2="21.665" y2="21.275" width="0.3048" layer="1"/>
 </signal>
 <signal name="CURRENT-">
 <contactref element="U1" pad="1"/>
 <contactref element="R1" pad="S1"/>
-<wire x1="19.1" y1="28.725" x2="20.25" y2="28.725" width="0.3048" layer="1"/>
-<wire x1="20.25" y1="28.725" x2="21.275" y2="28.725" width="0.3048" layer="1"/>
+<wire x1="21.64" y1="28.725" x2="21.275" y2="28.725" width="0.3048" layer="1"/>
 <wire x1="21.275" y1="28.725" x2="24.0348" y2="25.9652" width="0.3048" layer="1"/>
 <wire x1="25.8156" y1="25.9652" x2="24.0348" y2="25.9652" width="0.3048" layer="1"/>
 <contactref element="U3" pad="4"/>
-<wire x1="20.75" y1="34.75" x2="21.875" y2="35.875" width="0.3048" layer="1"/>
 <wire x1="21.875" y1="35.875" x2="22.619" y2="35.875" width="0.3048" layer="1"/>
 <wire x1="22.619" y1="35.875" x2="22.694" y2="35.95" width="0.3048" layer="1"/>
-<wire x1="20.75" y1="34.75" x2="20.75" y2="29.225" width="0.3048" layer="1"/>
-<wire x1="20.75" y1="29.225" x2="20.25" y2="28.725" width="0.3048" layer="1"/>
+<wire x1="21.275" y1="28.725" x2="21.275" y2="30.4775" width="0.3048" layer="1"/>
+<wire x1="21.275" y1="30.4775" x2="20.955" y2="30.7975" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="34.955" x2="21.875" y2="35.875" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="30.7975" x2="20.955" y2="34.955" width="0.3048" layer="1"/>
 </signal>
 <signal name="REF">
 <contactref element="U6" pad="2"/>
@@ -2699,8 +2717,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="24.6698" y1="24.6698" x2="24.25" y2="24.25" width="0.3048" layer="1"/>
 <wire x1="24.25" y1="24.25" x2="24.25" y2="22.5" width="0.3048" layer="1"/>
 <wire x1="24.25" y1="22.5" x2="24.75" y2="22" width="0.3048" layer="1"/>
-<wire x1="24.75" y1="22" x2="25.55" y2="22" width="0.3048" layer="1"/>
-<wire x1="25.55" y1="22" x2="25.6" y2="21.95" width="0.3048" layer="1"/>
+<wire x1="24.75" y1="22" x2="26.185" y2="22" width="0.3048" layer="1"/>
 <wire x1="25" y1="28.05" x2="25.2" y2="28.05" width="0.3048" layer="1"/>
 <wire x1="25.2" y1="28.05" x2="26.25" y2="27" width="0.3048" layer="1"/>
 <wire x1="26.25" y1="27" x2="26.75" y2="27" width="0.3048" layer="1"/>
@@ -2709,6 +2726,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="27" y1="25" x2="26.75" y2="24.75" width="0.3048" layer="1"/>
 <wire x1="26.75" y1="24.75" x2="25.8958" y2="24.75" width="0.3048" layer="1"/>
 <wire x1="25.8958" y1="24.75" x2="25.8156" y2="24.6698" width="0.3048" layer="1"/>
+<wire x1="26.185" y1="22" x2="26.235" y2="21.95" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="C5" pad="2"/>
@@ -2748,7 +2766,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="33.095" y1="17.095" x2="32.5" y2="16.5" width="0.3048" layer="1"/>
 <wire x1="32.5" y1="16.5" x2="21.5" y2="16.5" width="0.3048" layer="1"/>
 <wire x1="21.5" y1="16.5" x2="20" y2="18" width="0.3048" layer="1"/>
-<wire x1="20" y1="18" x2="15.95" y2="18" width="0.3048" layer="1"/>
+<wire x1="20" y1="18" x2="17.22" y2="18" width="0.3048" layer="1"/>
 <wire x1="36" y1="23.55" x2="36" y2="22.25" width="0.3048" layer="1"/>
 <wire x1="36" y1="22.25" x2="36.25" y2="22" width="0.3048" layer="1"/>
 <via x="36.25" y="22" extent="1-16" drill="0.6"/>
@@ -2760,10 +2778,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="N$3">
 <contactref element="R1" pad="I1"/>
 <contactref element="F1" pad="P$1"/>
-<wire x1="17.78" y1="36.83" x2="17.78" y2="35.56" width="3.302" layer="1"/>
-<wire x1="17.78" y1="35.56" x2="13.97" y2="31.75" width="3.302" layer="1"/>
-<wire x1="13.97" y1="31.75" x2="13.97" y2="28.845" width="3.302" layer="1"/>
-<wire x1="13.97" y1="28.845" x2="13.85" y2="28.725" width="3.302" layer="1"/>
+<polygon width="0.3048" layer="1" thermals="no" rank="2">
+<vertex x="15.875" y="40.005"/>
+<vertex x="15.875" y="34.925"/>
+<vertex x="12.7" y="31.75"/>
+<vertex x="12.7" y="27.305"/>
+<vertex x="20.32" y="27.305"/>
+<vertex x="20.32" y="40.005"/>
+</polygon>
 </signal>
 </signals>
 </board>
