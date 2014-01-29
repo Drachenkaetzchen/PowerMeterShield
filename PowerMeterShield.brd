@@ -159,8 +159,7 @@
 </text>
 <text x="55" y="12.27" size="1.016" layer="25" rot="R90" align="top-left">Channel 0: Current
 Channel 1: Voltage
-
-</text>
+I²C Address: 0x68</text>
 <text x="55" y="40.27" size="1.016" layer="25" rot="R90" align="top-right">16 Bit: 15 SPS
 14 Bit: 60 SPS
 12 Bit: 240 SPS</text>
