@@ -7572,6 +7572,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="highpower" width="0.3048" drill="0">
+<clearance class="1" value="0.381"/>
 </class>
 <class number="2" name="isolated" width="0" drill="0">
 <clearance class="2" value="20"/>
