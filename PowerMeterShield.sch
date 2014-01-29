@@ -7517,12 +7517,9 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <packages>
 <package name="R1SE">
 <smd name="2" x="-1.27" y="-5.1" dx="1.2" dy="1.8" layer="1"/>
-<smd name="3" x="1.27" y="-5.1" dx="1.2" dy="1.8" layer="1"/>
 <smd name="4" x="3.81" y="-5.1" dx="1.2" dy="1.8" layer="1"/>
 <smd name="1" x="-3.81" y="-5.1" dx="1.2" dy="1.8" layer="1"/>
 <smd name="8" x="-3.81" y="5.06" dx="1.2" dy="1.8" layer="1"/>
-<smd name="7" x="-1.27" y="5.06" dx="1.2" dy="1.8" layer="1"/>
-<smd name="6" x="1.27" y="5.06" dx="1.2" dy="1.8" layer="1"/>
 <smd name="5" x="3.81" y="5.06" dx="1.2" dy="1.8" layer="1"/>
 <wire x1="-6.375" y1="5.35" x2="6.375" y2="5.35" width="0.127" layer="21"/>
 <wire x1="6.375" y1="5.35" x2="6.375" y2="-5.35" width="0.127" layer="21"/>
