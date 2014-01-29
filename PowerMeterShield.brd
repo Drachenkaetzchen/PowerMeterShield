@@ -2349,10 +2349,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </element>
 <element name="U$1" library="SparkFun" package="OSHW-LOGO-M" value="" x="3.175" y="47.9425"/>
 <element name="R20" library="rcl" package="R2010" value="0" x="43" y="42" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.4025" y="38.735" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="NAME" x="45.085" y="38.1" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
 <element name="R21" library="rcl" package="R2010" value="0" x="32" y="42" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.5275" y="38.735" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="NAME" x="29.845" y="38.4175" size="1.016" layer="25" rot="R90" align="center-left"/>
 </element>
 <element name="U3" library="burr-brown" package="SOT23-5" value="INA138" x="24" y="35" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="80K5906" x="24" y="35" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2365,10 +2365,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="28.125" y="40.1375" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R22" library="rcl" package="R2010" value="0" x="30.5725" y="11.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.795" y="14.715" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="32.795" y="15.35" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R23" library="rcl" package="R2010" value="0" x="48.7625" y="11.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="50.985" y="14.715" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="46.54" y="15.35" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="F1" library="SparkFun" package="PTC" value="PTCPTH" x="15.24" y="36.83" smashed="yes" rot="R180">
 <attribute name="PRICE_10" value="0.59" x="15.24" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
