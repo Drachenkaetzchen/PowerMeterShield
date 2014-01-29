@@ -6066,80 +6066,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-wago-500">
-<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
-Grid 5.00 mm&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="W237-102">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
-<wire x1="1.488" y1="-2.261" x2="3.469" y2="-0.254" width="0.254" layer="51"/>
-<wire x1="-4.989" y1="-5.461" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-5.461" x2="-4.989" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-3.389" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-3.389" y1="-3.073" x2="-1.611" y2="-3.073" width="0.1524" layer="51"/>
-<wire x1="-1.611" y1="-3.073" x2="1.615" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="3.393" y1="-3.073" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-4.989" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="-3.073" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.531" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-3.073" x2="3.393" y2="-3.073" width="0.1524" layer="51"/>
-<circle x="-2.5" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
-</package>
-</packages>
-<symbols>
-<symbol name="KL">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KL+V">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="W237-102" prefix="X" uservalue="yes">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KL+V" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="W237-102">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="237-102" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="70K9898" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCP3428">
 <packages>
 <package name="SOIC127P600X175-8N">
@@ -7563,10 +7489,115 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-phoenix-350">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1751248">
+<description>&lt;b&gt;MKDS 1/ 2-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 2&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
+<wire x1="-3.75" y1="3.65" x2="3.75" y2="3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="3.65" x2="-3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.0993" x2="-3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-1.6163" x2="3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.0993" x2="3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-1.6163" x2="3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="1.9123" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="1.9123" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="1.4367" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="1.4367" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="3.75" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="3.65" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="-3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-2.0993" x2="-3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-2.956" y1="-0.811" x2="-1.039" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="3.75" y1="-2.911" x2="-3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.65" x2="3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-3.35" x2="3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.35" x2="3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.35" x2="-3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-2.911" x2="-3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.911" x2="3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-0.544" y1="0.611" x2="-0.55" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-0.55" y1="0.605" x2="-2.461" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="0.544" y1="-0.811" x2="2.461" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="2.956" y1="0.611" x2="2.95" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="2.95" y1="0.605" x2="1.039" y2="-1.306" width="0.1016" layer="51"/>
+<circle x="-1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<pad name="1" x="-1.75" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="2" x="1.75" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<text x="-2.2" y="2.2225" size="1.27" layer="21" font="vector">1</text>
+<text x="1.2925" y="2.2225" size="1.27" layer="21" font="vector">2</text>
+<text x="-4.105" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.0525" y="4.1275" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1016" layer="21">
+<vertex x="-3.1525" y="-2.8575"/>
+<vertex x="-3.47" y="-2.2225"/>
+<vertex x="-2.835" y="-2.2225"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHRAUBKLEMME">
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<circle x="11.43" y="0" radius="0.6839" width="0.254" layer="94"/>
+<text x="1.27" y="-0.889" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="13.97" y="-0.889" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="K" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1751248" prefix="X">
+<description>&lt;b&gt;MKDS 1/ 2-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 2&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
+<gates>
+<gate name="-1" symbol="SCHRAUBKLEMME" x="2.54" y="0" addlevel="always"/>
+<gate name="-2" symbol="SCHRAUBKLEMME" x="2.54" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="1751248">
+<connects>
+<connect gate="-1" pin="K" pad="1"/>
+<connect gate="-2" pin="K" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="ISOLATED"/>
+<variantdef name="NONISOLATED"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -7581,19 +7612,14 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <parts>
 <part name="R1" library="R-Vishay" deviceset="SHUNT-4" device="CSM3675M" value="0.005">
 <attribute name="OC_FARNELL" value="1107419RL"/>
-<attribute name="PRICE_10" value="0.844"/>
+<attribute name="PRICE_10" value="0.90"/>
+<attribute name="PRICE_100" value="0.78"/>
 </part>
 <part name="GND1" library="supply1" deviceset="GNDI" device=""/>
-<part name="X1" library="con-wago-500" deviceset="W237-102" device="">
-<attribute name="OC_FARNELL" value="1717001"/>
-<attribute name="PRICE_10" value="0.294"/>
-</part>
-<part name="X2" library="con-wago-500" deviceset="W237-102" device="">
-<attribute name="OC_FARNELL" value="1717001"/>
-<attribute name="PRICE_10" value="0.294"/>
-</part>
 <part name="U5" library="MCP3428" deviceset="MCP3426A0-E/SN" device="">
+<attribute name="OC_DIGIKEY" value="MCP3426A0-E/SN-ND"/>
 <attribute name="PRICE_10" value="2.06"/>
+<attribute name="PRICE_100" value="1.58"/>
 </part>
 <part name="GND2" library="supply1" deviceset="GNDI" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X10" device="">
@@ -7620,60 +7646,159 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
 </part>
-<part name="U4" library="Adum1250" deviceset="ADUM1250ARZ" device=""/>
+<part name="U4" library="Adum1250" deviceset="ADUM1250ARZ" device="">
+<attribute name="OC_DIGIKEY" value="296-34872-1-ND"/>
+<attribute name="PRICE_10" value="3.33"/>
+<attribute name="PRICE_100" value="1.74"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="U1" library="INA170" deviceset="INA170EA/2K5" device=""/>
-<part name="U6" library="maxim" deviceset="MAX6520" device="" value="ISL21080"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="20k"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="20k"/>
+<part name="U1" library="INA170" deviceset="INA170EA/2K5" device="">
+<attribute name="OC_DIGIKEY" value="INA170EA/2K5CT-ND"/>
+<attribute name="OC_FARNELL" value="1234851"/>
+<attribute name="PRICE_10" value="1.85"/>
+<attribute name="PRICE_100" value="0.92"/>
+<attribute name="REMARK" value="USE DIGIKEY FOR 100"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
+<part name="U6" library="maxim" deviceset="MAX6520" device="" value="ISL21080">
+<attribute name="OC_DIGIKEY" value="ISL21080DIH310Z-TKCT-ND"/>
+<attribute name="PRICE_10" value="1.35"/>
+<attribute name="PRICE_100" value="0.81"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="20k">
+<attribute name="OC_FARNELL" value="2129219"/>
+<attribute name="PRICE_5000" value="0.001"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="20k">
+<attribute name="OC_FARNELL" value="2129219"/>
+<attribute name="PRICE_5000" value="0.001"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
 <part name="GND5" library="supply1" deviceset="GNDI" device=""/>
 <part name="GND3" library="supply1" deviceset="GNDI" device=""/>
 <part name="GND4" library="supply1" deviceset="GNDI" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="10n">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
+<variant name="NONISOLATED" populate="no"/>
 </part>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10µ">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
+<variant name="NONISOLATED" populate="no"/>
 </part>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10n">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
+<variant name="NONISOLATED" populate="no"/>
 </part>
-<part name="U2" library="THS4531" deviceset="THS4531AID" device="" value="THS4521"/>
+<part name="U2" library="THS4531" deviceset="THS4531AID" device="" value="THS4521">
+<attribute name="OC_DIGIKEY" value="296-35973-1-ND"/>
+<attribute name="OC_FARNELL" value="1755708"/>
+<attribute name="PRICE_10" value="1.81"/>
+<attribute name="PRICE_100" value="1.17"/>
+<attribute name="REMARK" value="USE DIGIKEY FOR 100"/>
+</part>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="10n">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
 </part>
 <part name="GND6" library="supply1" deviceset="GNDI" device=""/>
 <part name="GND7" library="supply1" deviceset="GNDI" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="6.04M"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="6.04M"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="412k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="6.04M">
+<attribute name="OC_DIGIKEY" value="311-6.04MCRCT-ND"/>
+<attribute name="PRICE_10" value="0.013"/>
+<attribute name="PRICE_100" value="0.0083"/>
+</part>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="200k">
+<attribute name="OC_FARNELL" value="2129299"/>
+<attribute name="PRICE_5000" value="0.001"/>
+</part>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="200k">
+<attribute name="OC_FARNELL" value="2129299"/>
+<attribute name="PRICE_5000" value="0.001"/>
+</part>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="6.04M">
+<attribute name="OC_DIGIKEY" value="311-6.04MCRCT-ND"/>
+<attribute name="PRICE_10" value="0.013"/>
+<attribute name="PRICE_100" value="0.008"/>
+</part>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="412k">
+<attribute name="OC_DIGIKEY" value="311-412KCRCT-ND"/>
+<attribute name="PRICE_10" value="0.015"/>
+<attribute name="PRICE_100" value="0.0071"/>
+</part>
 <part name="GND8" library="supply1" deviceset="GNDI" device=""/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="100n">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
+<variant name="NONISOLATED" populate="no"/>
 </part>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n">
 <attribute name="OC_FARNELL" value="2310707"/>
 <attribute name="PRICE_100" value="0.005"/>
 </part>
-<part name="R20" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
-<part name="R21" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
-<part name="U3" library="burr-brown" deviceset="INA138" device=""/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R2010" value="0">
+<attribute name="OC_DIGIKEY" value="1276-5994-1-ND"/>
+<attribute name="PRICE_10" value="0.08"/>
+<attribute name="PRICE_100" value="0.034"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R2010" value="0">
+<attribute name="OC_DIGIKEY" value="1276-5994-1-ND"/>
+<attribute name="PRICE_10" value="0.082"/>
+<attribute name="PRICE_100" value="0.034"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
+<part name="U3" library="burr-brown" deviceset="INA138" device="">
+<attribute name="OC_DIGIKEY" value="296-17936-1-ND"/>
+<attribute name="PRICE_10" value="1.15"/>
+<attribute name="PRICE_100" value="0.63"/>
+<attribute name="REMARK" value="USE DIGIKEY FOR 100"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
 <part name="GND9" library="supply1" deviceset="GNDI" device=""/>
-<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="20k"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
-<part name="R23" library="rcl" deviceset="R-EU_" device="R2010" value="0"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="20k">
+<attribute name="OC_FARNELL" value="2129219"/>
+<attribute name="PRICE_5000" value="0.001"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R2010" value="0">
+<attribute name="OC_DIGIKEY" value="1276-5994-1-ND"/>
+<attribute name="PRICE_10" value="0.082"/>
+<attribute name="PRICE_100" value="0.034"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
+<part name="R23" library="rcl" deviceset="R-EU_" device="R2010" value="0">
+<attribute name="OC_DIGIKEY" value="1276-5994-1-ND"/>
+<attribute name="PRICE_10" value="0.082"/>
+<attribute name="PRICE_100" value="0.032"/>
+<variant name="ISOLATED" populate="no"/>
+</part>
 <part name="F1" library="SparkFun" deviceset="PTC" device="PTH">
 <attribute name="OC_DIGIKEY" value="RGEF1000-ND"/>
 <attribute name="PRICE_10" value="0.59"/>
+<attribute name="PRICE_100" value="0.53"/>
 </part>
-<part name="DC1" library="R1SE" deviceset="R1SE" device=""/>
+<part name="DC1" library="R1SE" deviceset="R1SE" device="">
+<attribute name="OC_DIGIKEY" value="945-1659-1-ND"/>
+<attribute name="PRICE_10" value="3.08"/>
+<attribute name="PRICE_100" value="2.82"/>
+<variant name="NONISOLATED" populate="no"/>
+</part>
+<part name="X3" library="con-phoenix-350" deviceset="1751248" device="">
+<attribute name="OC_DIGIKEY" value="ED2740-ND"/>
+<attribute name="PRICE_10" value="0.27"/>
+<attribute name="PRICE_100" value="0.19"/>
+</part>
+<part name="X4" library="con-phoenix-350" deviceset="1751248" device="">
+<attribute name="OC_DIGIKEY" value="ED2740-ND"/>
+<attribute name="PRICE_10" value="0.27"/>
+<attribute name="PRICE_100" value="0.19"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7715,25 +7840,24 @@ Variant A only</text>
 <text x="5.08" y="78.74" size="1.778" layer="91">Jumper Resistors
 Variant A only</text>
 <wire x1="99.06" y1="137.16" x2="99.06" y2="175.26" width="0.1524" layer="94"/>
+<text x="5.842" y="138.43" size="1.016" layer="97">Note: Most connectors are 10mm high, which gives problems with
+shields stacked on top of this one. The On-Shore OSTTE020104
+has only 8.5mm height, which would work here.</text>
+<text x="104.14" y="12.7" size="1.778" layer="97">May be replaced with pin compatible TI ISO1541</text>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="40.64" y="154.94" smashed="yes" rot="MR270">
-<attribute name="OC_FARNELL" x="40.64" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
-<attribute name="PRICE_10" x="40.64" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
-<attribute name="NAME" x="39.2684" y="159.512" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="44.323" y="159.512" size="1.778" layer="96" rot="MR270"/>
+<instance part="R1" gate="G$1" x="48.26" y="154.94" smashed="yes" rot="MR270">
+<attribute name="OC_FARNELL" x="48.26" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
+<attribute name="PRICE_10" x="48.26" y="154.94" size="1.27" layer="96" rot="MR270" display="off"/>
+<attribute name="NAME" x="46.8884" y="159.512" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="51.943" y="159.512" size="1.778" layer="96" rot="MR270"/>
+<attribute name="PRICE_100" x="48.26" y="154.94" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
-<instance part="GND1" gate="G$1" x="17.78" y="142.24"/>
-<instance part="X1" gate="-1" x="10.16" y="167.64">
-<attribute name="PRICE_10" x="10.16" y="167.64" size="1.27" layer="96" display="off"/>
-</instance>
-<instance part="X1" gate="-2" x="10.16" y="162.56"/>
-<instance part="X2" gate="-1" x="10.16" y="152.4">
-<attribute name="PRICE_10" x="10.16" y="152.4" size="1.27" layer="96" display="off"/>
-</instance>
-<instance part="X2" gate="-2" x="10.16" y="147.32"/>
+<instance part="GND1" gate="G$1" x="25.4" y="147.32"/>
 <instance part="U5" gate="A" x="220.98" y="68.58">
 <attribute name="PRICE_10" x="220.98" y="68.58" size="1.27" layer="96" display="off"/>
+<attribute name="PRICE_100" x="220.98" y="68.58" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="220.98" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND2" gate="G$1" x="187.96" y="48.26"/>
 <instance part="JP1" gate="A" x="116.84" y="152.4" rot="R90">
@@ -7762,15 +7886,33 @@ Variant A only</text>
 <attribute name="PRICE_100" x="195.58" y="76.2" size="1.27" layer="96" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" x="195.58" y="76.2" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="U4" gate="A" x="88.9" y="27.94"/>
+<instance part="U4" gate="A" x="88.9" y="27.94">
+<attribute name="PRICE_100" x="88.9" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="88.9" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="88.9" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U1" gate="A" x="134.62" y="111.76"/>
-<instance part="U6" gate="-1" x="91.44" y="66.04"/>
+<instance part="U1" gate="A" x="134.62" y="111.76">
+<attribute name="PRICE_100" x="134.62" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="134.62" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="134.62" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="REMARK" x="134.62" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U6" gate="-1" x="91.44" y="66.04">
+<attribute name="PRICE_100" x="91.44" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="91.44" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="91.44" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R3" gate="G$1" x="109.22" y="106.68" smashed="yes">
 <attribute name="NAME" x="110.998" y="103.3526" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.41" y="103.378" size="1.778" layer="96"/>
+<attribute name="PRICE_5000" x="109.22" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="OC_FARNELL" x="109.22" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="154.94" y="114.3" rot="R90"/>
+<instance part="R4" gate="G$1" x="154.94" y="114.3" rot="R90">
+<attribute name="PRICE_5000" x="154.94" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" x="154.94" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND5" gate="G$1" x="154.94" y="104.14"/>
 <instance part="GND3" gate="G$1" x="101.6" y="91.44"/>
 <instance part="GND4" gate="G$1" x="81.28" y="53.34"/>
@@ -7792,7 +7934,12 @@ Variant A only</text>
 <attribute name="PRICE_100" x="96.52" y="101.6" size="1.27" layer="96" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" x="96.52" y="101.6" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U2" gate="A" x="218.44" y="144.78"/>
+<instance part="U2" gate="A" x="218.44" y="144.78">
+<attribute name="PRICE_100" x="218.44" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="218.44" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="218.44" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="REMARK" x="218.44" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C5" gate="G$1" x="193.04" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="198.628" y="144.399" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="193.04" y="144.399" size="1.778" layer="96" rot="R180"/>
@@ -7804,22 +7951,35 @@ Variant A only</text>
 <instance part="R8" gate="G$1" x="187.96" y="104.14" smashed="yes">
 <attribute name="NAME" x="184.404" y="106.1466" size="1.778" layer="95"/>
 <attribute name="VALUE" x="184.15" y="100.838" size="1.778" layer="96"/>
+<attribute name="PRICE_100" x="187.96" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="187.96" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="187.96" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="233.68" y="165.1" smashed="yes">
 <attribute name="NAME" x="235.458" y="161.7726" size="1.778" layer="95"/>
-<attribute name="VALUE" x="229.87" y="161.798" size="1.778" layer="96"/>
+<attribute name="VALUE" x="228.346" y="161.798" size="1.778" layer="96"/>
+<attribute name="PRICE_5000" x="233.68" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="OC_FARNELL" x="233.68" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R6" gate="G$1" x="215.9" y="104.14" smashed="yes">
 <attribute name="NAME" x="217.678" y="100.8126" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="100.838" size="1.778" layer="96"/>
+<attribute name="VALUE" x="210.82" y="100.838" size="1.778" layer="96"/>
+<attribute name="PRICE_5000" x="215.9" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="OC_FARNELL" x="215.9" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="187.96" y="165.1" smashed="yes">
 <attribute name="NAME" x="189.738" y="161.7726" size="1.778" layer="95"/>
 <attribute name="VALUE" x="181.61" y="161.798" size="1.778" layer="96"/>
+<attribute name="PRICE_100" x="187.96" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="187.96" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="187.96" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="175.26" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="178.5874" y="144.018" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="178.5874" y="145.034" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="178.562" y="138.43" size="1.778" layer="96" rot="R90"/>
+<attribute name="PRICE_100" x="175.26" y="142.24" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PRICE_10" x="175.26" y="142.24" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="OC_DIGIKEY" x="175.26" y="142.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND8" gate="G$1" x="180.34" y="99.06"/>
 <instance part="C6" gate="G$1" x="88.9" y="104.14" smashed="yes">
@@ -7834,18 +7994,65 @@ Variant A only</text>
 <attribute name="PRICE_100" x="218.44" y="119.38" size="1.27" layer="96" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" x="218.44" y="119.38" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R20" gate="G$1" x="38.1" y="60.96"/>
-<instance part="R21" gate="G$1" x="38.1" y="50.8"/>
-<instance part="U3" gate="G$1" x="38.1" y="116.84"/>
-<instance part="GND9" gate="G$1" x="53.34" y="93.98"/>
-<instance part="R24" gate="G$1" x="60.96" y="106.68" rot="R90"/>
-<instance part="R22" gate="G$1" x="38.1" y="40.64"/>
-<instance part="R23" gate="G$1" x="38.1" y="33.02"/>
-<instance part="F1" gate="G$1" x="33.02" y="144.78" rot="R180">
-<attribute name="PRICE_10" x="33.02" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="OC_DIGIKEY" x="33.02" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R20" gate="G$1" x="38.1" y="60.96">
+<attribute name="PRICE_100" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DC1" gate="G$1" x="149.86" y="58.42"/>
+<instance part="R21" gate="G$1" x="38.1" y="50.8">
+<attribute name="PRICE_100" x="38.1" y="50.8" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="38.1" y="50.8" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="38.1" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U3" gate="G$1" x="38.1" y="116.84">
+<attribute name="PRICE_100" x="38.1" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="38.1" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="38.1" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="REMARK" x="38.1" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND9" gate="G$1" x="53.34" y="93.98"/>
+<instance part="R24" gate="G$1" x="60.96" y="106.68" rot="R90">
+<attribute name="PRICE_5000" x="60.96" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" x="60.96" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R22" gate="G$1" x="38.1" y="40.64">
+<attribute name="PRICE_100" x="38.1" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="38.1" y="40.64" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="38.1" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="38.1" y="33.02">
+<attribute name="PRICE_100" x="38.1" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="38.1" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="38.1" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="F1" gate="G$1" x="40.64" y="147.32" rot="R180">
+<attribute name="PRICE_10" x="40.64" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="40.64" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_100" x="40.64" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="DC1" gate="G$1" x="149.86" y="58.42">
+<attribute name="PRICE_100" x="149.86" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="PRICE_10" x="149.86" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="OC_DIGIKEY" x="149.86" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X3" gate="-1" x="20.32" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.05" y="168.529" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="PRICE_100" x="20.32" y="167.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="20.32" y="167.64" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="20.32" y="167.64" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="X3" gate="-2" x="20.32" y="162.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.05" y="163.449" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="X4" gate="-1" x="20.32" y="157.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.05" y="158.369" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="PRICE_100" x="20.32" y="157.48" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="20.32" y="157.48" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="20.32" y="157.48" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="X4" gate="-2" x="20.32" y="152.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.05" y="153.289" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7884,20 +8091,20 @@ Variant A only</text>
 </net>
 <net name="VIN_MEAS" class="1">
 <segment>
-<wire x1="20.32" y1="152.4" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="144.78" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-1" pin="KL"/>
+<wire x1="27.94" y1="157.48" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="157.48" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="X4" gate="-1" pin="K"/>
 </segment>
 </net>
 <net name="V_MEAS" class="1">
 <segment>
-<wire x1="40.64" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="KL"/>
+<wire x1="48.26" y1="167.64" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="I2"/>
-<wire x1="40.64" y1="162.56" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<label x="40.64" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="162.56" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
+<label x="48.26" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="X3" gate="-1" pin="K"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -8014,14 +8221,14 @@ Variant A only</text>
 <wire x1="187.96" y1="76.2" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="162.56" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="162.56" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="147.32" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="147.32" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
-<junction x="17.78" y="147.32"/>
+<wire x1="22.86" y1="162.56" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="162.56" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="152.4" x2="22.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="152.4" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<junction x="25.4" y="152.4"/>
 <pinref part="GND1" gate="G$1" pin="GNDI"/>
-<pinref part="X1" gate="-2" pin="KL"/>
-<pinref part="X2" gate="-2" pin="KL"/>
+<pinref part="X3" gate="-2" pin="K"/>
+<pinref part="X4" gate="-2" pin="K"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="GND2"/>
@@ -8243,8 +8450,8 @@ Variant A only</text>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="S2"/>
-<wire x1="45.72" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
-<label x="45.72" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
+<label x="53.34" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IN+"/>
@@ -8260,8 +8467,8 @@ Variant A only</text>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="S1"/>
-<wire x1="45.72" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
-<label x="45.72" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<label x="53.34" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IN-"/>
@@ -8329,9 +8536,9 @@ Variant A only</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="I1"/>
-<wire x1="40.64" y1="149.86" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="149.86" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
