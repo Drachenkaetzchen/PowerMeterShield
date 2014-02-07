@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,19 +23,19 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -103,7 +103,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -2399,6 +2399,7 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <attribute name="PRICE_100" value="0.034" x="43" y="42" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE_10" value="0.08" x="43" y="42" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_DIGIKEY" value="1276-5994-1-ND" x="43" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_TME" value="SMD2010-0R" x="43" y="42" size="1.778" layer="27" rot="R90" display="off"/>
 <variant name="ISOLATED" populate="no"/>
 </element>
 <element name="R21" library="rcl" package="R2010" value="0" x="32" y="42" smashed="yes" rot="R90">
@@ -2471,6 +2472,28 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <attribute name="PRICE_100" value="0.19" x="3.81" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PRICE_10" value="0.27" x="3.81" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_DIGIKEY" value="ED2740-ND" x="3.81" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C8" library="rcl" package="C0805" value="10n" x="41.91" y="31.75" rot="R90">
+<attribute name="PRICE_100" value="0.005" x="41.91" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2310707" x="41.91" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R2" library="rcl" package="R0805" value="33" x="36" y="29" rot="R270">
+<attribute name="PRICE_10" value="0.015" x="36" y="29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE_100" value="0.0071" x="36" y="29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_DIGIKEY" value="311-412KCRCT-ND" x="36" y="29" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R10" library="rcl" package="R0805" value="33" x="39.0525" y="28.8925" rot="R270">
+<attribute name="PRICE_10" value="0.015" x="39.0525" y="28.8925" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE_100" value="0.0071" x="39.0525" y="28.8925" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_DIGIKEY" value="311-412KCRCT-ND" x="39.0525" y="28.8925" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C9" library="rcl" package="C0805" value="10n" x="45.4025" y="30.1625" rot="R180">
+<attribute name="PRICE_100" value="0.005" x="45.4025" y="30.1625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="2310707" x="45.4025" y="30.1625" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C10" library="rcl" package="C0805" value="10n" x="45.4025" y="32.7025">
+<attribute name="PRICE_100" value="0.005" x="45.4025" y="32.7025" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="2310707" x="45.4025" y="32.7025" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2647,6 +2670,8 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <contactref element="DC1" pad="4"/>
 <contactref element="X3" pad="2"/>
 <contactref element="X4" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C9" pad="1"/>
 </signal>
 <signal name="+5V/2">
 <contactref element="U5" pad="3"/>
@@ -2761,31 +2786,29 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 </signal>
 <signal name="ADC1+">
 <contactref element="U5" pad="1"/>
-<contactref element="R6" pad="2"/>
-<contactref element="U2" pad="4"/>
-<wire x1="39" y1="25.45" x2="37.95" y2="25.45" width="0.3048" layer="1"/>
-<wire x1="37.95" y1="25.45" x2="37.5" y2="25" width="0.3048" layer="1"/>
-<wire x1="37.5" y1="25" x2="37.5" y2="21.5" width="0.3048" layer="1"/>
-<wire x1="37.5" y1="21.5" x2="38.095" y2="20.905" width="0.3048" layer="1"/>
-<wire x1="39.3622" y1="20.905" x2="38.095" y2="20.905" width="0.3048" layer="1"/>
-<wire x1="39.3622" y1="32.095" x2="38.095" y2="32.095" width="0.3048" layer="1"/>
-<wire x1="38.095" y1="32.095" x2="37.5" y2="31.5" width="0.3048" layer="1"/>
-<wire x1="37.5" y1="31.5" x2="37.5" y2="25" width="0.3048" layer="1"/>
+<contactref element="C8" pad="1"/>
+<contactref element="R10" pad="1"/>
+<contactref element="C9" pad="2"/>
+<wire x1="39.0525" y1="29.8425" x2="39.0525" y2="31.7853" width="0.254" layer="1"/>
+<wire x1="39.0525" y1="31.7853" x2="39.3622" y2="32.095" width="0.254" layer="1"/>
+<wire x1="41.91" y1="30.8" x2="40.01" y2="30.8" width="0.254" layer="1"/>
+<wire x1="40.01" y1="30.8" x2="39.0525" y2="29.8425" width="0.254" layer="1"/>
+<wire x1="41.91" y1="30.8" x2="43.815" y2="30.8" width="0.254" layer="1"/>
+<wire x1="43.815" y1="30.8" x2="44.4525" y2="30.1625" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC1-">
 <contactref element="U5" pad="2"/>
-<contactref element="U2" pad="5"/>
-<contactref element="R5" pad="2"/>
-<wire x1="39.3622" y1="33.365" x2="37.865" y2="33.365" width="0.3048" layer="1"/>
-<wire x1="37.865" y1="33.365" x2="36.75" y2="32.25" width="0.3048" layer="1"/>
-<wire x1="36.75" y1="32.25" x2="36.75" y2="27" width="0.3048" layer="1"/>
-<wire x1="36.75" y1="27" x2="36.5" y2="26.75" width="0.3048" layer="1"/>
-<wire x1="36.5" y1="26.75" x2="36.5" y2="25.95" width="0.3048" layer="1"/>
-<wire x1="36.5" y1="25.95" x2="36" y2="25.45" width="0.3048" layer="1"/>
-<wire x1="34.6378" y1="20.905" x2="34.6378" y2="24.8878" width="0.3048" layer="1"/>
-<wire x1="34.6378" y1="24.8878" x2="35" y2="25.25" width="0.3048" layer="1"/>
-<wire x1="35" y1="25.25" x2="35.8" y2="25.25" width="0.3048" layer="1"/>
-<wire x1="35.8" y1="25.25" x2="36" y2="25.45" width="0.3048" layer="1"/>
+<contactref element="R2" pad="1"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C10" pad="1"/>
+<wire x1="39.3622" y1="33.365" x2="37.81" y2="33.365" width="0.254" layer="1"/>
+<wire x1="39.3622" y1="33.365" x2="41.245" y2="33.365" width="0.254" layer="1"/>
+<wire x1="41.245" y1="33.365" x2="41.91" y2="32.7" width="0.254" layer="1"/>
+<wire x1="41.91" y1="32.7" x2="44.45" y2="32.7" width="0.254" layer="1"/>
+<wire x1="44.45" y1="32.7" x2="44.4525" y2="32.7025" width="0.254" layer="1"/>
+<wire x1="37.81" y1="33.365" x2="37.1475" y2="32.7025" width="0.254" layer="1"/>
+<wire x1="37.1475" y1="32.7025" x2="37.1475" y2="31.0975" width="0.254" layer="1"/>
+<wire x1="37.1475" y1="31.0975" x2="36" y2="29.95" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U1" pad="5"/>
@@ -2903,6 +2926,29 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <vertex x="20.32" y="27.305"/>
 <vertex x="20.32" y="38.735"/>
 </polygon>
+</signal>
+<signal name="ADC1+_OLD">
+<contactref element="R6" pad="2"/>
+<contactref element="U2" pad="4"/>
+<contactref element="R10" pad="2"/>
+<wire x1="39.0525" y1="27.9425" x2="39.0525" y2="25.5025" width="0.254" layer="1"/>
+<wire x1="39.0525" y1="25.5025" x2="39" y2="25.45" width="0.254" layer="1"/>
+<wire x1="39" y1="25.45" x2="38.15" y2="25.45" width="0.254" layer="1"/>
+<wire x1="38.15" y1="25.45" x2="37.465" y2="24.765" width="0.254" layer="1"/>
+<wire x1="37.465" y1="24.765" x2="37.465" y2="21.59" width="0.254" layer="1"/>
+<wire x1="37.465" y1="21.59" x2="38.1" y2="20.955" width="0.254" layer="1"/>
+<wire x1="38.1" y1="20.955" x2="39.3122" y2="20.955" width="0.254" layer="1"/>
+<wire x1="39.3122" y1="20.955" x2="39.3622" y2="20.905" width="0.254" layer="1"/>
+</signal>
+<signal name="ADC1-_OLD">
+<contactref element="U2" pad="5"/>
+<contactref element="R5" pad="2"/>
+<contactref element="R2" pad="2"/>
+<wire x1="34.6378" y1="20.905" x2="34.6378" y2="24.8878" width="0.3048" layer="1"/>
+<wire x1="34.6378" y1="24.8878" x2="35" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="35" y1="25.25" x2="35.8" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="35.8" y1="25.25" x2="36" y2="25.45" width="0.3048" layer="1"/>
+<wire x1="36" y1="25.45" x2="36" y2="28.05" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>

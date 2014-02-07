@@ -7743,6 +7743,7 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 </part>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R2010" value="0">
 <attribute name="OC_DIGIKEY" value="1276-5994-1-ND"/>
+<attribute name="OC_TME" value="SMD2010-0R"/>
 <attribute name="PRICE_10" value="0.08"/>
 <attribute name="PRICE_100" value="0.034"/>
 <variant name="ISOLATED" populate="no"/>
@@ -7799,6 +7800,28 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <attribute name="PRICE_10" value="0.27"/>
 <attribute name="PRICE_100" value="0.19"/>
 </part>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10n">
+<attribute name="OC_FARNELL" value="2310707"/>
+<attribute name="PRICE_100" value="0.005"/>
+</part>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="33">
+<attribute name="OC_DIGIKEY" value="311-412KCRCT-ND"/>
+<attribute name="PRICE_10" value="0.015"/>
+<attribute name="PRICE_100" value="0.0071"/>
+</part>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="33">
+<attribute name="OC_DIGIKEY" value="311-412KCRCT-ND"/>
+<attribute name="PRICE_10" value="0.015"/>
+<attribute name="PRICE_100" value="0.0071"/>
+</part>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10n">
+<attribute name="OC_FARNELL" value="2310707"/>
+<attribute name="PRICE_100" value="0.005"/>
+</part>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="10n">
+<attribute name="OC_FARNELL" value="2310707"/>
+<attribute name="PRICE_100" value="0.005"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7844,6 +7867,7 @@ Variant A only</text>
 shields stacked on top of this one. The On-Shore OSTTE020104
 has only 8.5mm height, which would work here.</text>
 <text x="104.14" y="12.7" size="1.778" layer="97">May be replaced with pin compatible TI ISO1541</text>
+<text x="223.52" y="170.18" size="1.27" layer="91">Possible Replacement: AD8137</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="48.26" y="154.94" smashed="yes" rot="MR270">
@@ -7955,11 +7979,11 @@ has only 8.5mm height, which would work here.</text>
 <attribute name="PRICE_10" x="187.96" y="104.14" size="1.778" layer="96" display="off"/>
 <attribute name="OC_DIGIKEY" x="187.96" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R5" gate="G$1" x="233.68" y="165.1" smashed="yes">
-<attribute name="NAME" x="235.458" y="161.7726" size="1.778" layer="95"/>
-<attribute name="VALUE" x="228.346" y="161.798" size="1.778" layer="96"/>
-<attribute name="PRICE_5000" x="233.68" y="165.1" size="1.778" layer="96" display="off"/>
-<attribute name="OC_FARNELL" x="233.68" y="165.1" size="1.778" layer="96" display="off"/>
+<instance part="R5" gate="G$1" x="231.14" y="165.1" smashed="yes">
+<attribute name="NAME" x="232.918" y="161.7726" size="1.778" layer="95"/>
+<attribute name="VALUE" x="225.806" y="161.798" size="1.778" layer="96"/>
+<attribute name="PRICE_5000" x="231.14" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="OC_FARNELL" x="231.14" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R6" gate="G$1" x="215.9" y="104.14" smashed="yes">
 <attribute name="NAME" x="217.678" y="100.8126" size="1.778" layer="95"/>
@@ -7998,6 +8022,7 @@ has only 8.5mm height, which would work here.</text>
 <attribute name="PRICE_100" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
 <attribute name="PRICE_10" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
 <attribute name="OC_DIGIKEY" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="OC_TME" x="38.1" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R21" gate="G$1" x="38.1" y="50.8">
 <attribute name="PRICE_100" x="38.1" y="50.8" size="1.778" layer="96" display="off"/>
@@ -8052,6 +8077,38 @@ has only 8.5mm height, which would work here.</text>
 </instance>
 <instance part="X4" gate="-2" x="20.32" y="152.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="19.05" y="153.289" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="C8" gate="G$1" x="254" y="139.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="251.079" y="148.844" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="251.841" y="139.7" size="1.778" layer="96" rot="R270"/>
+<attribute name="PRICE_100" x="254" y="139.7" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" x="254" y="139.7" size="1.27" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="246.38" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="243.586" y="150.6474" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="250.19" y="150.622" size="1.778" layer="96" rot="R180"/>
+<attribute name="PRICE_100" x="246.38" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="246.38" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="246.38" y="147.32" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R10" gate="G$1" x="246.38" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="243.586" y="137.9474" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="250.19" y="137.922" size="1.778" layer="96" rot="R180"/>
+<attribute name="PRICE_100" x="246.38" y="134.62" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PRICE_10" x="246.38" y="134.62" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OC_DIGIKEY" x="246.38" y="134.62" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="254" y="127" smashed="yes" rot="R180">
+<attribute name="NAME" x="251.079" y="136.144" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="251.841" y="127" size="1.778" layer="96" rot="R270"/>
+<attribute name="PRICE_100" x="254" y="127" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" x="254" y="127" size="1.27" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="254" y="152.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="251.079" y="161.544" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="251.841" y="152.4" size="1.778" layer="96" rot="R270"/>
+<attribute name="PRICE_100" x="254" y="152.4" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" x="254" y="152.4" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -8306,6 +8363,16 @@ has only 8.5mm height, which would work here.</text>
 <wire x1="33.02" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
 <label x="30.48" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="254" y1="157.48" x2="254" y2="160.02" width="0.1524" layer="91"/>
+<label x="254" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="254" y1="124.46" x2="254" y2="121.92" width="0.1524" layer="91"/>
+<label x="254" y="121.92" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="+5V/2" class="0">
 <segment>
@@ -8412,12 +8479,15 @@ has only 8.5mm height, which would work here.</text>
 <label x="200.66" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="104.14" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="104.14" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VOUT+"/>
-<wire x1="243.84" y1="139.7" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
-<label x="243.84" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="254" y1="137.16" x2="254" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="254" y1="134.62" x2="251.46" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="254" y1="134.62" x2="256.54" y2="134.62" width="0.1524" layer="91"/>
+<junction x="254" y="134.62"/>
+<label x="256.54" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="254" y1="134.62" x2="254" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC1-" class="0">
@@ -8427,12 +8497,15 @@ has only 8.5mm height, which would work here.</text>
 <label x="200.66" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="VOUT-"/>
-<wire x1="236.22" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="144.78" x2="243.84" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="165.1" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
-<label x="243.84" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="147.32" x2="254" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="254" y1="147.32" x2="254" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="254" y1="147.32" x2="256.54" y2="147.32" width="0.1524" layer="91"/>
+<junction x="254" y="147.32"/>
+<label x="256.54" y="147.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="254" y1="147.32" x2="254" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8523,7 +8596,7 @@ has only 8.5mm height, which would work here.</text>
 <wire x1="195.58" y1="147.32" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="149.86" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="165.1" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="165.1" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="147.32" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="149.86" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
@@ -8539,6 +8612,32 @@ has only 8.5mm height, which would work here.</text>
 <wire x1="48.26" y1="149.86" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC1+_OLD" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="104.14" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VOUT+"/>
+<wire x1="238.76" y1="134.62" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="139.7" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<junction x="238.76" y="134.62"/>
+</segment>
+</net>
+<net name="ADC1-_OLD" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="VOUT-"/>
+<wire x1="236.22" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="144.78" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="147.32" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="165.1" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
+<junction x="238.76" y="147.32"/>
 </segment>
 </net>
 </nets>
